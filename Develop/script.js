@@ -1,5 +1,11 @@
 // Assignment code here
 
+  //character types
+
+var upperCaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+var lowerCaseCharacters = "abcdefghijklmnopqrstuvwxyz";
+var nums = "0123456789";
+var symbols = "!@#$%&*()?+-=_<>";
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
