@@ -45,18 +45,24 @@ var generatePassword = function() {
         characterSet += nums;
       }
 
-     // reset password 
+      // reset password 
 
      var password = "";
 
-     // Check if the user selected at least one charater type
+      // Check if the user selected at least one charater type
 
       if (characterSet === ""){
       alert("You must select at least one option (uppercase, lowercase, symbols, or numbers).")
       return generatePassword();
       }
 
+      // for loop to generate the password using the character types selected
 
+      for (var i = 0; i < passwordLength; i++) {
+        var randomIndex = Math.floor(Math.random() * characterSet.length);
+        password += characterSet.charAt(randomIndex);
+      }
+      
     return password;
   }
 
