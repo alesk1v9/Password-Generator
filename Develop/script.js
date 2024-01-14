@@ -43,8 +43,21 @@ var generatePassword = function() {
     var useNums = confirm("would you like to use numbers?");
       if (useNums){
         characterSet += nums;
-      } 
+      }
 
+     // reset password 
+
+     var password = "";
+
+     // Check if the user selected at least one charater type
+
+      if (characterSet === ""){
+      alert("You must select at least one option (uppercase, lowercase, symbols, or numbers).")
+      return generatePassword();
+      }
+
+
+    return password;
   }
 
 
