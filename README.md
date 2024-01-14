@@ -10,5 +10,5 @@ Enhance your online security effortlessly with this easy-to-use password generat
 
 ## Links
 
-deployed application:
+deployed application: https://alesk1v9.github.io/Password-Generator/
 
