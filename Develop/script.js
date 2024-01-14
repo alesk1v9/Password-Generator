@@ -23,6 +23,28 @@ var generatePassword = function() {
     //variable to append the options picked by the user
     var characterSet = "";
 
+    //prompt to user get the character types
+
+    var useUpperCaseCharacters = confirm("would you like to use upper case characters?");
+      if (useUpperCaseCharacters){
+        characterSet += upperCaseCharacters;
+      } 
+
+    var useLowerCaseCharacters = confirm("would you like to use lower case characters?");
+      if(useLowerCaseCharacters){
+        characterSet += lowerCaseCharacters;
+    }
+
+    var useSymbols = confirm("would you like to use symbols characters?");
+      if (useSymbols){
+        characterSet += symbols;
+      } 
+
+    var useNums = confirm("would you like to use numbers?");
+      if (useNums){
+        characterSet += nums;
+      } 
+
   }
 
 
